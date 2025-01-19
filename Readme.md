@@ -1,0 +1,80 @@
+Here's a draft for your GitHub README file explaining parts 1 and 2 of your assignment:
+
+---
+
+# Topsis Implementation and Python Package
+
+This repository contains the implementation of the **Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)** as part of an assignment. It includes two components:
+
+1. **Command-Line Python Program**  
+2. **Python Package Published on PyPI**
+
+---
+
+## 1. Command-Line Python Program
+
+This program calculates the TOPSIS scores and ranks for a given dataset.  
+
+### How It Works:
+- **Input File:**  
+  The input file is a CSV file with three or more columns:
+  - The first column contains the names of the objects/variables (e.g., M1, M2, M3, etc.).
+  - The remaining columns contain numeric data.
+
+- **Output File:**  
+  The output file includes all columns from the input file with two additional columns:
+  - `Topsis Score`
+  - `Rank`
+
+### Features:
+- Handles exceptions for:
+  - Incorrect input format.
+  - Missing files.
+  - Non-numeric values.
+- Ensures weights and impacts are correctly formatted.
+- Validates the consistency of input dimensions (number of weights, impacts, and columns).
+
+### Usage:
+Run the program through the command line:
+
+```bash
+python <program.py> <InputDataFile> <Weights> <Impacts> <ResultFileName>
+```
+
+**Example:**
+
+```bash
+python Topsis-Gazal-102217174.py data.csv "1,1,1,2" "+,+,-,+" result.csv
+```
+
+---
+
+## 2. Python Package on PyPI
+
+https://pypi.org/project/Topsis-Gazal-102217174/ 
+
+### User Guide:
+- Install the package using `pip`:
+  ```bash
+  pip install Topsis-Gazal-102217174
+  ```
+- Run the TOPSIS calculation from the command line:
+  ```bash
+  Topsis-Gazal-102217174 <InputDataFile> <Weights> <Impacts> <ResultFileName>
+  ```
+  **Example:**
+  ```bash
+  Topsis-Gazal-102217174 data.csv "1,1,1,2" "+,+,-,+" result.csv
+  ```
+
+### Testing:
+The package was thoroughly tested by installing it from PyPI and running multiple test cases.
+
+---
+
+
+## Resources and References
+- [Learn TOPSIS](https://www.youtube.com/watch?v=kfcN7MuYVeI)
+- [How to Publish Python Packages to PyPI](https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56)
+
+---
