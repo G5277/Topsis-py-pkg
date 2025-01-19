@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: Topsis-Gazal-102217174
-Version: 0.2
+Version: 0.0.1
 Summary: A Python implementation of the TOPSIS method.
 Author: Gazal
 Author-email: 2580gazal@gmail.com
@@ -14,7 +14,6 @@ Dynamic: description-content-type
 Dynamic: requires-dist
 Dynamic: summary
 
-Here's a draft for your GitHub README file explaining parts 1 and 2 of your assignment:
 
 ---
 
