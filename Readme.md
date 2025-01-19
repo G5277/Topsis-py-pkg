@@ -3,7 +3,7 @@
 
 # Topsis Implementation and Python Package
 
-This repository contains the implementation of the **Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)** as part of an assignment. It includes two components:
+This repository contains the implementation of the **Technique for Order Preference by Similarity to Ideal Solution (TOPSIS)**. It includes two components:
 
 1. **Command-Line Python Program**  
 2. **Python Package Published on PyPI**
