@@ -1,4 +1,3 @@
-Here's a draft for your GitHub README file explaining parts 1 and 2 of your assignment:
 
 ---
 
