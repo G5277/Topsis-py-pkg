@@ -52,7 +52,7 @@ def topsis(input_file, weights, impacts, output_file):
     data['Topsis Score'] = scores
     data['Rank'] = scores.rank(ascending=False).astype(int)
     
-    # Save
+    # Save the output
     data.to_csv(output_file, index=False)
     print(f"Result saved to {output_file}")
 
