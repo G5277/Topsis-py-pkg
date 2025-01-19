@@ -44,11 +44,11 @@ def topsis(input_file, weights, impacts, output_file):
             ideal_worst.append(weighted.iloc[:, i].max())
     
     # Distances
-    distances_best = np.sqrt(((weighted - ideal_best) ** 2).sum(axis=1))
-    distances_worst = np.sqrt(((weighted - ideal_worst) ** 2).sum(axis=1))
+    best_distances = np.sqrt(((weighted - ideal_best) ** 2).sum(axis=1))
+    worst_distances = np.sqrt(((weighted - ideal_worst) ** 2).sum(axis=1))
     
     # TOPSIS score
-    scores = distances_worst / (distances_best + distances_worst)
+    scores = worst_distances / (best_distances + worst_distances)
     data['Topsis Score'] = scores
     data['Rank'] = scores.rank(ascending=False).astype(int)
     
