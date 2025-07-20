@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Topsis-Gazal-102217174',
-    version='0.3',
+    version='0.4',
     author='Gazal',
     author_email='2580gazal@gmail.com',
     description='A Python implementation of the TOPSIS method.',
