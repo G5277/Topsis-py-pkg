@@ -9,7 +9,7 @@ setup(
     long_description=open('Readme.md').read(),
     long_description_content_type='text/markdown',
     packages=find_packages(),
-    install_requires=['pandas', 'numpy', 'sys'],
+    install_requires=['pandas', 'numpy'],
     entry_points={
         'console_scripts': [
             'topsis=topsis.topsis:main',
