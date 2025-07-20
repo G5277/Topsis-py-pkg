@@ -1,3 +1,4 @@
+README.md
 setup.py
 Topsis_Gazal_102217174.egg-info/PKG-INFO
 Topsis_Gazal_102217174.egg-info/SOURCES.txt

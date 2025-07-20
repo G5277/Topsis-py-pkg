@@ -6,7 +6,7 @@ setup(
     author='Gazal',
     author_email='2580gazal@gmail.com',
     description='A Python implementation of the TOPSIS method.',
-    long_description=open('Readme.md').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
     packages=find_packages(),
     install_requires=['pandas', 'numpy'],
